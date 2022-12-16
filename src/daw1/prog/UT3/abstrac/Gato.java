@@ -10,4 +10,15 @@ public class Gato extends Animal{
     Boolean esMamifero(){
         return mamifero;
     }
+
+    @Override
+    String hablar() {
+        String hablar="Miau";
+        return hablar;
+    }
+    // Realmente no es necesario añadir el metodo heredado dormir para usarlo, ya que es común para todas las subclases
+    @Override
+    void dormir() {
+        super.dormir();
+    }
 }
